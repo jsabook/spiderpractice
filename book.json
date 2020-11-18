@@ -9,7 +9,8 @@
         "-lunr", 
         "-search", 
         "search-pro",
-        "tbfed-pagefooter"
+        "tbfed-pagefooter",
+         "pageview-count"
     ],
     "pluginsConfig": {
         "page-toc-button": {
