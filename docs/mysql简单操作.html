@@ -1,0 +1,845 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>mysql简单操作 · ansible newer</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="qipaqiu">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python与cmd.html" />
+    
+    
+    <link rel="prev" href="format函数.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="python的excel操作.html">
+            
+                <a href="python的excel操作.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    python的excel操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="format函数.html">
+            
+                <a href="format函数.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    format函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="mysql简单操作.html">
+            
+                <a href="mysql简单操作.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    mysql简单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="python与cmd.html">
+            
+                <a href="python与cmd.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    python与cmd
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="python对图像的处理.html">
+            
+                <a href="python对图像的处理.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    python对图像的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Re正则.html">
+            
+                <a href="Re正则.html">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    Re正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="SMETPLIB和POP3.html">
+            
+                <a href="SMETPLIB和POP3.html">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    SMETPLIB和POP3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="装饰器.html">
+            
+                <a href="装饰器.html">
+            
+                    
+                        <b>1.10.</b>
+                    
+                    装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                        <b>1.11.</b>
+                    
+                    爬虫
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="python与cookies.html">
+            
+                <a href="python与cookies.html">
+            
+                    
+                        <b>1.11.1.</b>
+                    
+                    python与cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="反反爬.html">
+            
+                <a href="反反爬.html">
+            
+                    
+                        <b>1.11.2.</b>
+                    
+                    反反爬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="python的Selenium_Python的使用方法的.html">
+            
+                <a href="python的Selenium_Python的使用方法的.html">
+            
+                    
+                        <b>1.11.3.</b>
+                    
+                    python的Selenium_Python的使用方法的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="Python爬虫提升速度.html">
+            
+                <a href="Python爬虫提升速度.html">
+            
+                    
+                        <b>1.11.4.</b>
+                    
+                    Python爬虫提升速度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="python异步请求.html">
+            
+                <a href="python异步请求.html">
+            
+                    
+                        <b>1.11.5.</b>
+                    
+                    python异步请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="进程与线程.html">
+            
+                <a href="进程与线程.html">
+            
+                    
+                        <b>1.11.6.</b>
+                    
+                    进程与线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="crawlspider.html">
+            
+                <a href="crawlspider.html">
+            
+                    
+                        <b>1.11.7.</b>
+                    
+                    Crawlspider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="base编码与md5.html">
+            
+                <a href="base编码与md5.html">
+            
+                    
+                        <b>1.11.8.</b>
+                    
+                    base编码与md5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="BeautifulSoup库查找与xpath.html">
+            
+                <a href="BeautifulSoup库查找与xpath.html">
+            
+                    
+                        <b>1.11.9.</b>
+                    
+                    BeautifulSoup库查找与xpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                        <b>1.12.</b>
+                    
+                    Scrapy
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="Scrapy/Scrapy1.html">
+            
+                <a href="Scrapy/Scrapy1.html">
+            
+                    
+                        <b>1.12.1.</b>
+                    
+                    Scrapy 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="Scrapy/Scrapy2.html">
+            
+                <a href="Scrapy/Scrapy2.html">
+            
+                    
+                        <b>1.12.2.</b>
+                    
+                    Scrapy 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="Scrapy/Scrapy部署.html">
+            
+                <a href="Scrapy/Scrapy部署.html">
+            
+                    
+                        <b>1.12.3.</b>
+                    
+                    Scrapy部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >mysql简单操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5E38;&#x89C1;&#x64CD;&#x4F5C;">&#x5E38;&#x89C1;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x8FDE;&#x63A5;&#xFF1A;">&#x8FDE;&#x63A5;&#xFF1A;</h2>
+<p><img src="img/image-20201118133931451.png" alt="image-20201118133931451"></p>
+<h2 id="&#x5EFA;&#x7ACB;&#x5E93;">&#x5EFA;&#x7ACB;&#x5E93;</h2>
+<p><img src="img/image-20201118133935663.png" alt="image-20201118133935663"></p>
+<p>&#x6216;&#x8005; <code>create database basename</code></p>
+<h2 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#xFF1A;">&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#xFF1A;</h2>
+<p><img src="img/image-20201118133941883.png" alt="image-20201118133941883"></p>
+<p>&#x6216;&#x8005;</p>
+<p><code>drop database basename</code></p>
+<p>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#xFF1A;</p>
+<p><img src="img/image-20201118134545438.png" alt="image-20201118134545438"></p>
+<p>&#x6216;&#x8005;<code>drop database basename</code></p>
+<p>&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;</p>
+<p><img src="img/image-20201118133950821.png" alt="image-20201118133950821"></p>
+<pre><code>USE DATABSE DATABASEBANE(use database basename)
+</code></pre><p>&#x5EFA;&#x7ACB;&#x8868;</p>
+<p>&#x6817;&#x5B50;&#xFF1A;</p>
+<p><img src="img/image-20201118134656365.png" alt="image-20201118134656365"></p>
+<p>&#x5220;&#x9664;&#x6570;&#x636E;&#x8868;&#xFF1A;</p>
+<p><img src="img/image-20201118134714597.png" alt="image-20201118134714597"></p>
+<p>&#x5728;&#x8868;&#x4E2D;&#x52A0;&#x5165;&#x6570;&#x636E;</p>
+<p><img src="img/image-20201118134719515.png" alt="image-20201118134719515"></p>
+<p>&#x5728;&#x8868;&#x4E2D;&#x63D0;&#x53D6;&#x6570;&#x636E;</p>
+<p><img src="img/image-20201118134729587.png" alt="image-20201118134729587"></p>
+<p> &#x5220;&#x9664;&#x6570;&#x636E;:</p>
+<p><img src="img/image-20201118134734959.png" alt="image-20201118134734959"></p>
+<p>&#x4FEE;&#x6539;&#x6570;&#x636E;&#xFF1A;</p>
+<p><img src="img/image-20201118134739665.png" alt="image-20201118134739665"></p>
+<p>&#x5220;&#x9664;&#x6570;&#x636E;&#xFF1A;</p>
+<p><img src="img/image-20201118134745904.png" alt="image-20201118134745904"></p>
+<p>where &#x662F;&#x7528;&#x6765;&#x9650;&#x5236;&#x6761;&#x4EF6;&#x7684;&#x3002;
+like&#x662F;&#x6A21;&#x7CCA;&#x6BD4;&#x8F83;
+union&#x662F;&#x5C06;&#x591A;&#x5F20;&#x8868;&#x4E00;&#x8D77;&#x8054;&#x5408;&#x8F93;&#x51FA;</p>
+<p><img src="img/image-20201118134750800.png" alt="image-20201118134750800"></p>
+<pre><code>&#x2022;    &#x53C2;&#x6570;&#x542B;&#x4E49;&#xFF1A;
+expression1, expression2, ... expression_n: &#x8981;&#x68C0;&#x7D22;&#x7684;&#x5217;&#x3002;
+&#x2022;    tables: &#x8981;&#x68C0;&#x7D22;&#x7684;&#x6570;&#x636E;&#x8868;&#x3002;
+&#x2022;    WHERE conditions: &#x53EF;&#x9009;&#xFF0C; &#x68C0;&#x7D22;&#x6761;&#x4EF6;&#x3002;
+&#x2022;    DISTINCT: &#x53EF;&#x9009;&#xFF0C;&#x5220;&#x9664;&#x7ED3;&#x679C;&#x96C6;&#x4E2D;&#x91CD;&#x590D;&#x7684;&#x6570;&#x636E;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B; UNION &#x64CD;&#x4F5C;&#x7B26;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x4E86;&#x91CD;&#x590D;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5; DISTINCT &#x4FEE;&#x9970;&#x7B26;&#x5BF9;&#x7ED3;&#x679C;&#x6CA1;&#x5565;&#x5F71;&#x54CD;&#x3002;
+&#x2022;    ALL: &#x53EF;&#x9009;&#xFF0C;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x7ED3;&#x679C;&#x96C6;&#xFF0C;&#x5305;&#x542B;&#x91CD;&#x590D;&#x6570;&#x636E;&#x3002;
+</code></pre><h1 id="python&#x5BF9;mysql&#x7684;&#x64CD;&#x4F5C;">Python&#x5BF9;mysql&#x7684;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li>&#x8FDE;&#x63A5;</li>
+<li>&#x505A;&#x4E24;&#x79CD;&#x64CD;&#x4F5C;&#xFF08;&#x662F;&#x5426;&#x4F1A;&#x5BF9;&#x6E90;&#x6570;&#x636E;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#xFF09;</li>
+</ul>
+<h2 id="&#x8FDE;&#x63A5;">&#x8FDE;&#x63A5;</h2>
+<p><img src="img/image-20201118134804505.png" alt="image-20201118134804505"></p>
+<p>&#x4E24;&#x79CD;&#x64CD;&#x4F5C;&#xFF1A;
+&#x4E0D;&#x4F1A;&#x5BF9;&#x6E90;&#x6570;&#x636E;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x5C31;&#x4E0D;&#x7528;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;
+&#x4F1A;&#x5BF9;&#x6E90;&#x6570;&#x636E;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x5C31;&#x5FC5;&#x987B;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;</p>
+<p><img src="img/image-20201118134814490.png" alt="image-20201118134814490"></p>
+<p>&#x4E0D;&#x7BA1;&#x600E;&#x4E48;&#x6837;&#x6700;&#x540E;&#x90FD;&#x8981;&#x5173;&#x95ED;&#x8FDE;&#x63A5;</p>
+<p><img src="img/image-20201118134822147.png" alt="image-20201118134822147"></p>
+<p>Pymysql&#x4E5F;&#x80FD;&#x64CD;&#x4F5C;&#x4ECE;&#x8FD9;&#x4E2A;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;</p>
+<p>&#x89C4;&#x8303;&#x7684;&#x63D0;&#x4EA4;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p><img src="img/image-20201118134833839.png" alt="image-20201118134833839"></p>
+<h1 id="&#x4F7F;&#x7528;orm">&#x4F7F;&#x7528;ORM</h1>
+<p>&#x662F;&#x4E0D;&#x662F;&#x7528;pymysql&#x7279;&#x522B;&#x9EBB;&#x70E6;&#xFF0C;&#x73B0;&#x5728;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7B80;&#x5355;&#x7684;&#x5DE5;&#x5177;ORM,&#x5373;sqlalchemy
+&#x4E0B;&#x9762;&#x6765;&#x4ECB;&#x7ECD;sqlalchemy
+&#x8FDE;&#x63A5;sqlalchemy
+<a href="http://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine" target="_blank">http://docs.sqlalchemy.org/en/latest/core/engines.html#sqlalchemy.create_engine</a></p>
+<h2 id="&#x8FDE;&#x63A5;">&#x8FDE;&#x63A5;</h2>
+<p><img src="img/image-20201118134900282.png" alt="image-20201118134900282"></p>
+<p>&#x6BD4;&#x5982;&#x5982;&#x8FD9;&#x4E2A;</p>
+<pre><code>&apos;mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8&apos;.format(USERNAME,PASSWORD,
+HOSTNAME,PORT,DATABASE)
+</code></pre><p>&#x6570;&#x636E;&#x8868;
+&#x6620;&#x5C04;&#x80AF;&#x5B9A;&#x662F;&#x9700;&#x8981;&#x6570;&#x636E;&#x8868;&#x7684;&#x4E0D;&#x7136;python&#x91CC;&#x9762;&#x7684;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x548C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;</p>
+<p><img src="img/image-20201118134908355.png" alt="image-20201118134908355"></p>
+<p>&#x7136;&#x540E;&#x662F;&#x600E;&#x4E48;&#x6620;&#x5C04;&#x5230;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9700;&#x8981;&#x6267;&#x884C;&#x8FD9;&#x4E00;&#x53E5;&#x8BED;&#x53E5;</p>
+<p>&#x5176;&#x4E2D;&#x7684;base&#x662F;&#x600E;&#x4E48;&#x6765;&#x7684;</p>
+<pre><code>from sqlalchemy.ext.declarative import declarative_base
+</code></pre><p>&#x6267;&#x884C;&#x5B8C;&#x4E0A;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x540E;&#x5C31;&#x662F;&#x6620;&#x5C04;python&#x7C7B;&#x5230;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x4E86;
+&#x7136;&#x540E;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8868;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x63D2;&#x5165;&#xFF0C;&#x67E5;&#x627E;&#xFF0C;&#x66F4;&#x65B0;&#xFF0C;&#x5220;&#x6389;&#x3002;&#x9996;&#x5148;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x5728;session&#x4E2D;&#x8FDB;&#x884C;&#x7684;&#x3002;session&#x8FD9;&#x91CC;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x5C31;&#x662F;&#x7406;&#x89E3;&#x6210;&#x6570;&#x636E;&#x5E93;&#x4E0E;python&#x6784;&#x5EFA;&#x6210;&#x7684;&#x4E00;&#x6761;&#x901A;&#x9053;&#xFF0C;&#x4EFB;&#x4F55;&#x5BF9;&#x6570;&#x636E;&#x8868;&#x7684;&#x64CD;&#x4F5C;&#x90FD;&#x8981;&#x7ECF;&#x8FC7;&#x8FD9;&#x91CC;&#x3002;
+&#x5982;&#x4F55;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;session
+&#x4E24;&#x79CD;&#x65B9;&#x6CD5;</p>
+<pre><code>from sqlalchemy.orm import sessionmaker
+Session=sessionmarker(bind=engin)
+</code></pre><p>&#x6216;&#x8005;</p>
+<pre><code>Session=sessionmarker()
+Session.configure(bind=engine)
+</code></pre><p>&#x4F46;&#x662F;&#x6700;&#x540E;&#x90FD;&#x8981;</p>
+<pre><code>session=Session()
+</code></pre><p>&#x63D2;&#x5165;
+&#x63D2;&#x5165;&#x80AF;&#x5B9A;&#x63D2;&#x5165;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8868;&#x5B57;&#x6BB5;&#xFF0C;&#x90A3;&#x600E;&#x4E48;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x8868;&#x5B57;&#x6BB5;</p>
+<pre><code>ed_user = User(name=&apos;ed&apos;, fullname=&apos;Ed Jones&apos;, password=&apos;edspassword&apos;)
+</code></pre><p>&#x8FD9;&#x6837;ed_user&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;
+&#x7136;&#x540E;&#x63D0;&#x4EA4;</p>
+<pre><code>session.add(ed_user)
+session.commit()
+</code></pre><p>&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x4E00;&#x6B21;&#x589E;&#x52A0;&#x591A;&#x4E2A;&#x5B57;&#x6BB5;</p>
+<pre><code>session.add_all([
+...     User(name=&apos;wendy&apos;, fullname=&apos;Wendy Williams&apos;, password=&apos;foobar&apos;),
+...     User(name=&apos;mary&apos;, fullname=&apos;Mary Contrary&apos;, password=&apos;xxg527&apos;),
+...     User(name=&apos;fred&apos;, fullname=&apos;Fred Flinstone&apos;, password=&apos;blah&apos;)])
+</code></pre><p>&#x7528;session.add)all([,])&#x5C06;&#x5B57;&#x6BB5;&#x53D8;&#x6210;&#x5217;&#x8868;&#x7684;&#x5F62;&#x5F0F;&#x3002;
+&#x810F;&#xFF08;dirty&#xFF09;&#x6570;&#x636E;&#x4E0E;&#x65B0;&#xFF08;new&#xFF09;&#x6570;&#x636E;:&#x4E8C;&#x8005;&#x5F97;&#x5230;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x662F;&#x5426;&#x5BF9;session&#x8FDB;&#x884C;&#x4E86;commit()
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8FDB;&#x884C;commit&#x3002;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;session.dirty
+&#x5982;&#x679C;&#x8FDB;&#x884C;&#x4E86;commit&#x3002;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x662F;&#x5DF2;&#x7ECF;&#x8FDB;&#x884C;&#x4E86;&#x66F4;&#x65B0;&#x3002;session.new
+&#x5982;&#x4E0B;&#x9762;</p>
+<pre><code>&gt;&gt;&gt;session.dirty
+IdentitySet([&lt;User(name=&apos;ed&apos;, fullname=&apos;Ed Jones&apos;, password=&apos;f8s7ccs&apos;)&gt;])
+&gt;&gt;&gt;session.new
+IdentitySet([&lt;User(name=&apos;ed&apos;, fullname=&apos;Ed Jones&apos;, password=&apos;f8s7ccs&apos;)&gt;])
+</code></pre><p>&#x56DE;&#x6EDA;</p>
+<pre><code>session.rollback()
+</code></pre><p>&#x67E5;&#x8BE2;
+&#x8FD9;&#x91CC;&#x8981;&#x6D89;&#x53CA;&#x5230;
+<code>query&#xFF08;&#xFF09;</code>,&#x67E5;&#x627E;&#x662F;&#x901A;&#x8FC7;session&#x7684;query&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x79CD;&#x67E5;&#x67E5;&#x627E;&#xFF0C;<code>session.query(User,User.id).all()</code>&#x548C;<code>session.query(user).order_by(User.id).all()</code>&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x7684;sql&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#x6240;&#x793A;
+&#x6BD4;&#x5982;<code>session.query(User).order_by(User.id)</code>&#x7B49;&#x4EF7;&#x4E8E;sql&#x8BED;&#x53E5;</p>
+<pre><code>SELECT users.id AS users_id,
+        users.name AS users_name,
+        users.fullname AS users_fullname,
+        users.password AS users_password
+FROM users ORDER BY users.id
+</code></pre><p>&#x8FD9;&#x4E2A;&#x7684;&#x610F;&#x601D;&#x662F;&#x6309;&#x7167;user.id&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x540E;&#x8F93;&#x51FA;&#x3002;</p>
+<pre><code>session.query(User,User.id)
+SELECT users.name AS name_label
+FROM users
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x524D;&#x8005;&#x662F;&#x6309;&#x7167;id&#x5B57;&#x6BB5;&#x6392;&#x5E8F;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;&#x6574;&#x4E2A;&#x5B57;&#x6BB5;&#x3002;&#x540E;&#x8005;&#x662F;&#x83B7;&#x53D6;&#x5230;&#x4E00;&#x90E8;&#x5206;&#x5B57;&#x6BB5;&#x3002;&#x6BD4;&#x5982;&#x8FD9;&#x91CC;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x662F;<code>user.id</code>.
+&#x5207;&#x7247;&#x67E5;&#x8BE2;&#x3002;&#x8FD9;&#x4E2A;query&#x4E5F;&#x662F;&#x80FD;&#x591F;&#x8FDB;&#x884C;&#x5207;&#x7247;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>&gt;&gt;&gt; &gt;&gt;&gt; for u in session.query(User).order_by(User.id)[1:3]:
+...    print(u)
+</code></pre><p>&#x8FC7;&#x6EE4;&#x67E5;&#x627E;&#x3002;
+&#x8FD9;&#x4E2A;&#x624D;&#x662F;&#x6838;&#x5FC3;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x67E5;&#x627E;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x80AF;&#x5B9A;&#x662F;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x7684;&#x67D0;&#x51E0;&#x6761;&#x6570;&#x636E;&#x8FD9;&#x91CC;&#x662F;&#x91C7;&#x7528;query&#x7684;filter().&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x5229;&#x7528;filter&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x9650;&#x5236;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>session.query(User).filter(User.name==&apos;ed&apos;).filter(User.fullname==&apos;Ed Jones&apos;):
+</code></pre><p>&#x8FC7;&#x4E8E;<code>filter()</code>&#x8FD9;&#x91CC;&#x6709;&#x4E09;&#x79CD;&#x8FC7;&#x6EE4;&#x65B9;&#x5F0F;&#xFF1A;
+&#x7B49;&#x4E8E;&#x8FC7;&#x6EE4;&#xFF0C;&#x83B7;&#x53D6;&#x7B49;&#x4E8E;&#x67D0;&#x4E9B;&#x503C;&#x5F97;&#x8BB0;&#x5F55;</p>
+<pre><code>query.filter(User.name == &apos;ed&apos;)
+</code></pre><p>&#x4E0D;&#x7B26;&#x5408;&#x8FC7;&#x6EE4;&#xFF0C;&#x5F53;&#x4E0D;&#x7B26;&#x5408;&#x67D0;&#x4E9B;&#x8981;&#x6C42;&#x662F;&#x624D;&#x4F1A;&#x83B7;&#x53D6;</p>
+<pre><code>query.filter(User.name != &apos;ed&apos;)
+</code></pre><p>&#x6A21;&#x7CCA;&#x67E5;&#x627E;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;mysql&#x91CC;&#x9762;&#x6BD4;&#x8F83;&#x6709;&#x610F;&#x601D;&#x7684;
+&#x4E0D;&#x5FFD;&#x89C6;&#x5927;&#x5C0F;&#x5199;</p>
+<pre><code class="lang-`">query.filter(User.name.like(&apos;%ed%&apos;))
+</code></pre>
+<p>&#x5FFD;&#x89C6;&#x5927;&#x5C0F;&#x5199;</p>
+<pre><code>query.filter(User.name.ilike(&apos;%ed%&apos;))
+</code></pre><p>&#x5217;&#x8868;&#x5339;&#x914D; in</p>
+<pre><code>query.filter(User.name.in_([&apos;ed&apos;, &apos;wendy&apos;, &apos;jack&apos;]))
+</code></pre><h1 id="works-with-query-objects-too">works with query objects too:</h1>
+<pre><code>query.filter(User.name.in_(
+    session.query(User.name).filter(User.name.like(&apos;%ed%&apos;))
+))
+</code></pre><p>&#x81EA;&#x7136;&#x6709;in &#x4E86;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;not in&#x3002;&#x8FD9;&#x91CC;&#x7684;not in &#x662F;&#x5728;filter()&#x6761;&#x4EF6;&#x91CC;&#x9762;&#x52A0;&#x5165;~</p>
+<pre><code>query.filter(~User.name.in_([&apos;ed&apos;, &apos;wendy&apos;, &apos;jack&apos;]))
+</code></pre><p>&#x903B;&#x8F91;&#x7B26;&#x53F7;AND&#xFF0C;OR </p>
+<pre><code>from sqlalchemy import and_
+query.filter(and_(User.name == &apos;ed&apos;, User.fullname == &apos;Ed Jones&apos;))
+from sqlalchemy import or_
+query.filter(or_(User.name == &apos;ed&apos;, User.name == &apos;wendy&apos;))
+</code></pre><p>&#x5C31;&#x662F;<code>session.query(&#x8868;).filter(&#x6761;&#x4EF6;).order_by(&#x6392;&#x5E8F;)</code>
+&#x83B7;&#x53D6;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x5217;&#x8868;&#x77E5;&#x4E4E;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x53EA;&#x60F3;&#x8981;&#x4E00;&#x4E2A;&#xFF0C;&#x6216;&#x8005;&#x60F3;&#x8981;&#x5168;&#x90E8;&#x600E;&#x4E48;&#x641E;&#xFF1F;&#x5728;&#x6700;&#x540E;&#x52A0;&#x4E0A;all(),first() &#x6216;&#x8005;one()</p>
+<p>&#x5220;&#x9664; delete</p>
+<pre><code>&gt;&gt;&gt; a = session.query(Article).get(10)
+&gt;&gt;&gt; session.delete(a)
+&gt;&gt;&gt; session.commit()
+</code></pre><p>&#x66F4;&#x65B0; update(&#x67E5;&#x8BE2;&#x540E;&#x518D;&#x63D0;&#x4EA4;)</p>
+<pre><code>&gt;&gt;&gt; &gt;&gt;&gt; a = session.query(Article).get(10)
+&gt;&gt;&gt; a.title = &apos;My test blog post&apos;
+&gt;&gt;&gt; session.add(a)
+&gt;&gt;&gt; session.commit()
+</code></pre><p>&#x4EE5;&#x4E0A;&#x662F;&#x4E00;&#x5F20;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6709;&#x4E24;&#x5F20;&#x6570;&#x636E;&#x8868;&#x60F3;&#x5173;&#x8054;&#x8D77;&#x6765;&#x600E;&#x4E48;&#x641E;&#xFF1F;
+&#x5916;&#x952E;
+&#x4E00;&#x5BF9;&#x591A;&#x5916;&#x952E;
+&#x8FD9;&#x91CC;&#x53EA;&#x9700;&#x8981;&#x4E24;&#x6B65;&#xFF0C;&#x5728;&#x521B;&#x7ACB;&#x6570;&#x636E;&#x8868;&#x65F6;&#x5019;&#xFF0C;&#x5148;&#x5728;&#x4E24;&#x5F20;&#x8868;&#x4E2D;&#x521B;&#x5EFA;&#x5173;&#x7CFB;&#xFF0C;&#x518D;&#x521B;&#x5EFA;&#x5916;&#x952E;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;&#x4E00;&#x5BF9;&#x591A;&#x5173;&#x7CFB;&#x80AF;&#x5B9A;&#x662F;&#x5148;&#x521B;&#x5EFA;&#x5173;&#x7CFB;&#x4E86;&#xFF0C;&#x624D;&#x80FD;&#x6DFB;&#x52A0;&#x5916;&#x952E;
+&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x5F20;&#x8868;&#x4E0E;&#x5176;&#x5B83;&#x8868;&#x7684;&#x5173;&#x7CFB; <code>name=relation&#xFF08;&#x201C;Tablename&#x201D;&#xFF09;</code>
+&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x5916;&#x952E; <code>keyname=Column(Type,Foreignkey(&#x201C;tablename.keyname&#x201D;)</code></p>
+<pre><code>class User(Base):
+
+    __tablename__ = &apos;users&apos;
+
+    id = Column(Integer, primary_key=True)
+    username = Column(String(64), nullable=False, index=True)
+    password = Column(String(64), nullable=False)
+    email = Column(String(64), nullable=False, index=True)
+B   articles = relationship(&apos;Article&apos;)
+
+class Article(Base):
+
+    __tablename__ = &apos;articles&apos;
+
+    id = Column(Integer, primary_key=True)
+    title = Column(String(255), nullable=False, index=True)
+    content = Column(Text)
+    user_id = Column(Integer, ForeignKey(&apos;users.id&apos;))
+A   user= relationship(&apos;User&apos;)
+</code></pre><p><code>User</code>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>articles</code>&#x6765;&#x8BBF;&#x95EE;&#x5230;<code>Article.Article</code>&#x662F;&#x901A;&#x8FC7;<code>user_id</code>&#x6765;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;<code>Article</code>&#x901A;&#x8FC7;<code>user</code>&#x6765;&#x8BBF;&#x95EE;<code>User</code>
+&#x7B80;&#x4FBF;&#x7684;&#x5199;&#x6CD5;
+&#x53BB;&#x6389;A&#x5904;&#x4EE3;&#x7801;&#xFF0C;&#x5728;B&#x5904;&#x4EE3;&#x7801;&#x8D34;&#x4E0A;backref
+&#x5982;&#x4E0B;</p>
+<pre><code>class User(Base):
+
+    __tablename__ = &apos;users&apos;
+
+    id = Column(Integer, primary_key=True)
+    username = Column(String(64), nullable=False, index=True)
+    password = Column(String(64), nullable=False)
+    email = Column(String(64), nullable=False, index=True)
+    articles = relationship(&apos;Article&apos;&#xFF0C;backref=&#x2018;user&#x2019;)
+
+class Address(Base):
+...     __tablename__ = &apos;addresses&apos;
+...     id = Column(Integer, primary_key=True)
+...     email_address = Column(String, nullable=False)
+...     user_id = Column(Integer, ForeignKey(&apos;users.id&apos;))
+...
+...     user = relationship(&quot;User&quot;, back_populates=&quot;addresses&quot;)
+</code></pre><p>&#x5982;&#x4F55;&#x5728;&#x901A;&#x8FC7;&#x5916;&#x952E;&#x6DFB;&#x52A0;&#x6570;&#x636E;</p>
+<pre><code>&gt;&gt;&gt; jack = User(name=&apos;jack&apos;, fullname=&apos;Jack Bean&apos;, password=&apos;gjffdd&apos;)
+&gt;&gt;&gt; jack.addresses
+&gt;&gt;&gt; jack.addresses = [
+...                 Address(email_address=&apos;jack@google.com&apos;),
+...                 Address(email_address=&apos;j25@yahoo.com&apos;)]
+&gt;&gt;&gt; session.add(jack)
+&gt;&gt;&gt; session.commit()
+</code></pre><p>&#x5916;&#x952E;&#x7684;&#x83B7;&#x53D6;</p>
+<pre><code>&gt;&gt;&gt; jack = session.query(User).\
+... filter_by(name=&apos;jack&apos;).one()
+&gt;&gt;&gt; jack.addresses
+</code></pre><p>&#x5916;&#x952E;&#x7684;&#x67E5;&#x627E;</p>
+<pre><code>session.query(User, Address).\
+... filter(User.id==Address.user_id).\ ... filter(Address.email_address==&apos;jack@google.com&apos;).all():
+</code></pre><p>&#x8FD9;&#x6837;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x662F;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x739B;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;join&#x6765;&#x3002;</p>
+<pre><code>&gt;&gt;&gt; session.query(User).join(Address).\
+...         filter(Address.email_address==&apos;jack@google.com&apos;).\
+...         all()
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; dsx2016.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-11-18 13:49:28
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="format函数.html" class="navigation navigation-prev " aria-label="Previous page: format函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python与cmd.html" class="navigation navigation-next " aria-label="Next page: python与cmd">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"mysql简单操作","level":"1.4","depth":1,"next":{"title":"python与cmd","level":"1.5","depth":1,"path":"python与cmd.md","ref":"python与cmd.md","articles":[]},"previous":{"title":"format函数","level":"1.3","depth":1,"path":"format函数.md","ref":"format函数.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy dsx2016.com 2019","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"expandable-chapters":{}},"theme":"default","author":"qipaqiu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ansible newer","gitbook":"*"},"file":{"path":"mysql简单操作.md","mtime":"2020-11-18T05:49:28.952Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-18T06:52:50.819Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
